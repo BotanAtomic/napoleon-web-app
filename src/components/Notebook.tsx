@@ -97,9 +97,7 @@ const Notebook = () => {
       fileReader.onload = event => {
         const data = JSON.parse(event?.target?.result as string || '{}')
 
-
         const cells = data["cells"];
-
 
         Object.entries(cells).forEach(([key, value]) => {
            localStorage.setItem(key , value as string);
