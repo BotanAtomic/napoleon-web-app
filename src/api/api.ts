@@ -3,7 +3,7 @@ import axios from 'axios';
 export const DEV_ENV = (!process.env.NODE_ENV || process.env.NODE_ENV === 'development');
 
 const server = {
-  production: 'http://localhost:9000',
+  production: 'https://napoleon-app.herokuapp.com',
   development: 'http://localhost:9000',
 };
 
